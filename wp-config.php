@@ -20,11 +20,12 @@
 
 //Using environment variables for DB connection information
 
-$connectstr_dbhost = '';
-$connectstr_dbname = '';
-$connectstr_dbusername = '';
-$connectstr_dbpassword = '';
+$connectstr_dbhost = '127.0.0.1:49973';
+$connectstr_dbname = 'localdb';
+$connectstr_dbusername = 'testuser';
+$connectstr_dbpassword = 'j#8jt83hehthu34';
 
+/*
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_") !== 0) {
         continue;
@@ -34,7 +35,7 @@ foreach ($_SERVER as $key => $value) {
     $connectstr_dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
     $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
     $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
-}
+}*/
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
