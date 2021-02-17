@@ -19,7 +19,7 @@
  */
 
 //Using environment variables for DB connection information
-
+//the below are badly configured to recreate a "Database connection error" scenario
 $connectstr_dbhost = '127.0.0.1:49973';
 $connectstr_dbname = 'localdb';
 $connectstr_dbusername = 'testuser';
